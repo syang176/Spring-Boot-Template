@@ -1,25 +1,24 @@
 package com.syang176.business;
 
-import com.syang176.service.HelloService;
+import com.syang176.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
  * @author Syang176
- * @date 2024/12/2 21:46
  **/
 
 @Service
 public class DemoBusiness {
-    private final HelloService helloService;
+    private final DemoService demoService;
 
     @Autowired
-    public DemoBusiness(HelloService helloService) {
-        this.helloService = helloService;
+    public DemoBusiness(DemoService demoService) {
+        this.demoService = demoService;
     }
 
     public String say(String message) {
-        return helloService.sayHello(message);
+        return demoService.say(message);
     }
 
 

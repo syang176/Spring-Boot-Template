@@ -2,7 +2,6 @@ package com.syang176.common.entity;
 
 /**
  * @author Syang176
- * @date 2024/12/2 22:07
  **/
 public class R {
     private final Long code;
@@ -62,7 +61,7 @@ public class R {
     /**
      * 创建一个表示失败响应的对象，状态码为500，消息为指定的错误信息，并包含指定的数据。
      *
-     * @param msg 错误信息，描述失败的原因。
+     * @param msg  错误信息，描述失败的原因。
      * @param data 要包含在响应中的数据。
      * @return R对象，包含失败状态码、错误信息和提供的数据。
      */
@@ -74,7 +73,7 @@ public class R {
      * 创建一个表示失败响应的对象，状态码和消息由参数指定。
      *
      * @param code 响应的状态码。
-     * @param msg 错误信息，描述失败的原因。
+     * @param msg  错误信息，描述失败的原因。
      * @return R对象，包含指定的状态码和错误信息。
      */
     public static R fail(long code, String msg) {
